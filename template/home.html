@@ -3,49 +3,51 @@
 
 <h1 id="remember">Remember to hard reset</h1>...and should be deving in incognito
 <br><br>
+<div class="flex-container">
+  <div id="form-one" class="flex-container">
+    <form id="grams">
+      <div class="row"><label>Flour<input type="text" readonly value="1000grams"></label></div>
+      <div class="row"><label>Water<input type="number" min="0" name="quantity" placeholder=" Total in grams"></label></div>
+      <div class="row"><label>Salt<input type="number" min="0" name="quantity" placeholder="Total in grams"></label></div>
+      <div class="row"><label>Riser<input type="number" min="0" name="quantity" placeholder="Total in grams"></label></div>
+    </form>
+  </div>
 
-<form id="grams">
-  Flour<input type="number" readonly value="1000"><br>
-  Water<input type="number" min="0" name="quantity" placeholder=" Total in grams"><br>
-  Salt<input type="number" min="0" name="quantity" placeholder="Total in grams"><br>
-  Riser<input type="number" min="0" name="quantity" placeholder="Total in grams">
-</form>
-<form id="percent">
-  <input type="text" readonly value="100%">%<br>
-  <input type="number" min="0" name="quantity" placeholder="Total %">%<br>
-  <input type="number" min="0" name="quantity" placeholder="Total %">%<br>
-  <input type="number" min="0" name="quantity" placeholder="Total %">%
-</form>
+  <div id="form-two" class="flex-container">
+    <form id="percent">
+      <div class="row"><label><input type="text" readonly value="100%"></label></div>
+      <div class="row"><label><input type="number" min="0" name="quantity" placeholder="Total %"></label></div>
+      <div class="row"><label><input type="number" min="0" name="quantity" placeholder="Total %"></label></div>
+      <div class="row"><label><input type="number" min="0" name="quantity" placeholder="Total %"></label></div>
+    </form>
+  </div>
 
-<table>
-  <tr>
-    <td></td>
-    <td>Grams</td>
-    <td>Percent</td>
-  </tr>
-  <tr>
-    <td>Flour</td>
-    <td>1000g</td>
-    <td>100%</td>
-  </tr>
+  <table>
 
-  <tr>
-    <td>Water</td>
-    <td>700g</td>
-    <td>70%</td>
-  </tr>
+    <tr>
+      <td>Flour</td>
+      <td>1000g</td>
+      <td>100%</td>
+    </tr>
 
-  <tr>
-    <td>Salt</td>
-    <td>20g</td>
-    <td>2%</td>
-  </tr>
+    <tr>
+      <td>Water</td>
+      <td>700g</td>
+      <td>70%</td>
+    </tr>
 
-  <tr>
-    <td>Rising</td>
-    <td>60g</td>
-    <td>6%</td>
-  </tr>
-</table>
+    <tr>
+      <td>Salt</td>
+      <td>20g</td>
+      <td>2%</td>
+    </tr>
+
+    <tr>
+      <td>Rising</td>
+      <td>60g</td>
+      <td>6%</td>
+    </tr>
+  </table>
+</div>
 
 {% endblock %}

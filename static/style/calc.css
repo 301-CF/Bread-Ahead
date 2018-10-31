@@ -1,0 +1,26 @@
+.flex-container {
+    text-align: center;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+input {
+    margin: 3px;
+}
+
+td, th {
+    padding: .25em;
+    margin: 1em;
+    border: solid 2px black;
+}
+
+label{
+    display: table-cell;
+    text-align: right;
+}
+input {
+  display: table-cell;
+}
+div.row{
+    display:table-row;
+}

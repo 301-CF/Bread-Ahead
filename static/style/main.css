@@ -2,40 +2,17 @@ html {
     background: grey;
 }
 
-form {
-    text-align: center;
-    padding: 4px;
-}
-
-input {
-    margin: 4px;
-}
-
-td, th {
-    padding: .25em;
-    margin: 1em;
-    border: solid 2px black;
-    text-align: center;
-}
-
-table {
-    margin: 0.5em auto;
-}
-
-#grams {
-    border-style: dashed;
-    float:left;
-}
-#percent {
-    float: left;
-}
-
-#remember {
-    font-size: 4em;
-}
 nav {
     text-align: center;
 }
+
 li {
     display: inline-block;
 }
+
+#remember {
+text-align: center;
+margin: .3em;
+font-size: 4em;
+}
+
