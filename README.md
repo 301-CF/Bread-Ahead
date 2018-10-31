@@ -1,4 +1,4 @@
 # Bread Ahead
 
-#### A breadsite providing a bread percentage calculator.
+#### A bakers percentage calculator breadsite.
 

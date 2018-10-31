@@ -1,9 +1,51 @@
 {% extends "layout.html" %}
 {% block content %}
 
-<h1> The Calculations of BREAD </h1>
-<p> Updated!</p>
+<h1 id="remember">Remember to hard reset</h1>...and should be deving in incognito
+<br><br>
 
-Remember to hard reset...and should be deving in incognito
+<form id="grams">
+  Flour<input type="number" readonly value="1000"><br>
+  Water<input type="number" min="0" name="quantity" placeholder=" Total in grams"><br>
+  Salt<input type="number" min="0" name="quantity" placeholder="Total in grams"><br>
+  Riser<input type="number" min="0" name="quantity" placeholder="Total in grams">
+</form>
+<form id="percent">
+  <input type="text" readonly value="100%">%<br>
+  <input type="number" min="0" name="quantity" placeholder="Total %">%<br>
+  <input type="number" min="0" name="quantity" placeholder="Total %">%<br>
+  <input type="number" min="0" name="quantity" placeholder="Total %">%
+</form>
+
+<table>
+  <tr>
+    <td></td>
+    <td>Grams</td>
+    <td>Percent</td>
+  </tr>
+  <tr>
+    <td>Flour</td>
+    <td>1000g</td>
+    <td>100%</td>
+  </tr>
+
+  <tr>
+    <td>Water</td>
+    <td>700g</td>
+    <td>70%</td>
+  </tr>
+
+  <tr>
+    <td>Salt</td>
+    <td>20g</td>
+    <td>2%</td>
+  </tr>
+
+  <tr>
+    <td>Rising</td>
+    <td>60g</td>
+    <td>6%</td>
+  </tr>
+</table>
 
 {% endblock %}
