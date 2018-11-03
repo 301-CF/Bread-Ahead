@@ -4,19 +4,19 @@
 
 As a avid baker, there was a need for an easy to use and accessible bread calculation tool that made it easy to adjust and keep record of bread formulas.
 
-####Inspiration:
+#### Inspiration:
 
    The below image is inspiration for creation which can be found at found at: (Follow link at bottom to access the spreadsheet) <http://www.theartisan.net/Spreadsheet.htm> 
 ![bread calc inspiration](assets/bread-spread-calc.png)
 
-####Features:
+#### Features:
 1. Have a static 1000g/100% baker formula.
 1. Using the static formula give exact desired loaf size(dough).
 1. Using exact loaves as a base multiplier for multiple loaves
 1. 
 
 
-######To be added:
+###### To be added:
    * Measurement conversion out of grams.
    * Levain calculations for more precise formulas (hydration, flour types, ect. ).
    * Info button to clarify each fields use and how to use it.
