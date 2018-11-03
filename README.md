@@ -13,7 +13,7 @@ As a avid baker, there was a need for an easy to use and accessible bread calcul
 1. Have a static 1000g/100% baker formula.
 1. Using the static formula give exact desired loaf size(dough).
 1. Using exact loaves as a base multiplier for multiple loaves
-1. 
+1. Using a flour total calculate other ingredients needed utilizing basic formula. 
 
 
 ##### To be added:
