@@ -2,7 +2,7 @@
 
 #### A bakers percentage calculator breadsite.
 
-As a avid baker, there was a need for an easy to use and accessible bread calculation tool that made it easy to adjust and keep record of bread formulas.
+As a avid baker, there was a need for an intuitive and accessible bread calculation tool that made it easy to adjust and keep record of, and share bread formulas.
 
 #### Inspiration:
 
