@@ -16,7 +16,7 @@ As a avid baker, there was a need for an easy to use and accessible bread calcul
 1. 
 
 
-###### To be added:
+##### To be added:
    * Measurement conversion out of grams.
    * Levain calculations for more precise formulas (hydration, flour types, ect. ).
    * Info button to clarify each fields use and how to use it.
