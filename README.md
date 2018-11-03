@@ -6,7 +6,7 @@ As a avid baker, there was a need for an easy to use and accessible bread calcul
 
 #### Inspiration:
 
-   The below image is inspiration for creation which can be found at found at: (Follow link at bottom to access the spreadsheet) <http://www.theartisan.net/Spreadsheet.htm> 
+   The below image is inspiration for creation which can be found at found at: (**Note**: follow link at bottom to access the spreadsheet) <http://www.theartisan.net/Spreadsheet.htm> 
 ![bread calc inspiration](assets/bread-spread-calc.png)
 
 #### Features:
