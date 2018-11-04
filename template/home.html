@@ -1,5 +1,10 @@
 {% extends "layout.html" %}
 {% block content %}
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src='../static/app.js'></script>
+
+</head>
 
 <h1 id="remember">Remember to hard reset</h1>...and should be deving in incognito
 <br><br>
@@ -7,18 +12,18 @@
   <div id="form-one" class="flex-container">
     <form id="grams">
       <div class="row"><label>Flour<input type="text" readonly value="1000g"></label></div>
-      <div class="row"><label>Water<input type="number" min="0" name="quantity" placeholder=" Total in grams"></label></div>
-      <div class="row"><label>Salt<input type="number" min="0" name="quantity" placeholder="Total in grams"></label></div>
-      <div class="row"><label>Riser<input type="number" min="0" name="quantity" placeholder="Total in grams"></label></div>
+      <div class="row"><label>Water<input type="number" class="hydro-g" min="0" name="quantity" placeholder=" Total in grams"></label></div>
+      <div class="row"><label>Salt<input type="number" class="salt-g" min="0" name="quantity" placeholder="Total in grams"></label></div>
+      <div class="row"><label>Riser<input type="number" id="rise-g" min="0" name="quantity" placeholder="Total in grams"></label></div>
     </form>
   </div>
 
   <div id="form-two" class="flex-container">
     <form id="percent">
-      <div class="row"><label><input type="text" readonly value="100%"></label></div>
-      <div class="row"><label><input type="number" min="0" name="quantity" placeholder="Total %"></label></div>
-      <div class="row"><label><input type="number" min="0" name="quantity" placeholder="Total %"></label></div>
-      <div class="row"><label><input type="number" min="0" name="quantity" placeholder="Total %"></label></div>
+      <div class="row"><label>Flour %<input type="text" readonly value="100%"></label></div>
+      <div class="row"><label>Water %<input type="number" id="hydro-p" min="0" name="quantity" placeholder="Total water %"></label></div>
+      <div class="row"><label>Salt %<input type="number" id="salt-p" min="0" name="quantity" placeholder="Total salt %"></label></div>
+      <div class="row"><label>Yeast %<input type="number" id="rise-p" min="0" name="quantity" placeholder="Total yeast %"></label></div>
     </form>
   </div>
 
@@ -32,13 +37,13 @@
 
     <tr>
       <td>Water</td>
-      <td>700g</td>
+      <td class="hydro-g" class="td editable">700g</td>
       <td>70%</td>
     </tr>
 
     <tr>
       <td>Salt</td>
-      <td>20g</td>
+      <td class="salt-g" class="td editable">20g</td>
       <td>2%</td>
     </tr>
 
@@ -49,5 +54,9 @@
     </tr>
   </table>
 </div>
+
+ <script type='text/javascript' src='../static/app.js'></script>
+
+
 
 {% endblock %}
