@@ -14,7 +14,7 @@ As a avid baker, there was a need for an intuitive and accessible bread calculat
    The below image is inspiration for creation which can be found at found at: (**Note**: follow link at bottom to access the spreadsheet) <http://www.theartisan.net/Spreadsheet.htm> 
 ![bread calc inspiration](assets/bread-spread-calc.png)
 
-[:top: Contents](#contents)
+[:top: Contents](#content)
 #### Features:
 <a id="features"></a>
 1. Have a static 1000g/100% baker formula.
@@ -22,7 +22,7 @@ As a avid baker, there was a need for an intuitive and accessible bread calculat
 1. Using exact loaves as a base multiplier for multiple loaves
 1. Using a flour total calculate other ingredients needed utilizing basic formula. 
 
-[:top: Contents](#contents)
+[:top: Contents](#content)
 
 ##### To be added:
 <a id="to-be-added"></a>
@@ -33,13 +33,13 @@ As a avid baker, there was a need for an intuitive and accessible bread calculat
    * Email formula for records containing a link that will repopulate site form for easily changing a formula.  
    * Export as custom file times if desired(e.g. csv, json) with an import to repopulate.
 
-[:top: Contents](#contents)
+[:top: Contents](#content)
 
 #### Issues
 <a id="issues"></a>
    * Math calculations in main baker formula has a loose rounding to two decimal places
 
-[:top: Contents](#contents)
+[:top: Contents](#content)
 
 <!--
 Links:
