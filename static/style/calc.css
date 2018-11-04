@@ -24,3 +24,7 @@ input {
 div.row{
     display:table-row;
 }
+
+table, tr, td {
+    display: none;
+}
