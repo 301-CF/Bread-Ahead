@@ -1,0 +1,121 @@
+{% extends "layout.html" %}
+{% block content %}
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src='../static/app.js'></script>
+
+</head>
+
+<h1> MASTER FORMULA</h1>
+
+Flour<input type="text" readonly value="1000g">
+
+Water<input type="number" id="hydro-g" min="0" value="700"
+            placeholder=" Total in grams">
+
+Salt<input type="number" id="salt-g" min="0" value="26"
+           placeholder="Total in grams">
+
+Riser<input type="number" id="rise-g" min="0" value="60"
+            placeholder="Total in grams">
+
+Flour %<input type="text" readonly value="100%">
+
+Water %<input type="number" id="hydro-p" min="0" value="70"
+              placeholder="Total water %">
+
+Salt %<input type="number" id="salt-p" min="0" value="2.5"
+             placeholder="Total salt %">
+
+Yeast %<input type="number" id="rise-p" min="0" value="6"
+              placeholder="Total yeast %">
+
+
+<h1>VARIABLE FOUR</h1>
+
+Single size<input type="number" id="one-dough-total" min="0"
+       placeholder="Variable flour size?">
+Single F <input readonly type="number" id="one-flour-gram" min="0"
+               placeholder=" Total in grams">
+Single W <input readonly type="number" id="one-hydro-g" min="0"
+               placeholder=" Total in grams">
+Single S <input readonly type="number" id="one-salt-g" min="0"
+               placeholder="Total in grams">
+Single Y <input readonly type="number" id="one-rise-g" min="0"
+               placeholder="Total in grams">
+Single F <input readonly type="number" id="one-flour-percent" min="0"
+               placeholder=" Total in %">
+Single W <input readonly type="number" id="one-hydro-p" min="0"
+               placeholder="Total water %">
+Single S <input readonly type="number" id="one-salt-p" min="0"
+               placeholder="Total salt %">
+Single Y <input readonly type="number" id="one-rise-p" min="0"
+               placeholder="Total yeast %">
+
+<h1> MULTIPLY FLOUR</h1>
+
+xLoaves <input type="number" id="multi-dough-total" min="0"
+              placeholder="Multi loaves?">
+xFlour <input readonly type="number" id="multi-flour-g" min="0"
+             placeholder="multiple loaves">
+xWater <input readonly type="number" id="multi-hydro-g" min="0"
+             placeholder=" Total in grams">
+xSalt <input readonly type="number" id="multi-salt-g" min="0"
+            placeholder="Total in grams">
+xRiser <input readonly type="number" id="multi-rise-g" min="0"
+             placeholder="Total in grams">
+xFlour % <input type="text" readonly value="100%">
+xWater % <input readonly type="number" id="multi-hydro-p" min="0"
+               placeholder="Total water %">
+xSalt % <input readonly type="number" id="multi-salt-p" min="0"
+              placeholder="Total salt %">
+xYeast % <input readonly type="number" id="multi-rise-p" min="0"
+               placeholder="Total yeast %">
+
+
+<h1> FINISHED DOUGH SIZE</h1>
+
+xLoaves <input type="number" id="multi-dough-total" min="0"
+              placeholder="Multi loaves?">
+xFlour <input readonly type="number" id="multi-flour-g" min="0"
+             placeholder="multiple loaves">
+xWater <input readonly type="number" id="multi-hydro-g" min="0"
+             placeholder=" Total in grams">
+xSalt <input readonly type="number" id="multi-salt-g" min="0"
+            placeholder="Total in grams">
+xRiser <input readonly type="number" id="multi-rise-g" min="0"
+             placeholder="Total in grams">
+xFlour % <input type="text" readonly value="100%">
+xWater % <input readonly type="number" id="multi-hydro-p" min="0"
+               placeholder="Total water %">
+xSalt % <input readonly type="number" id="multi-salt-p" min="0"
+              placeholder="Total salt %">
+xYeast % <input readonly type="number" id="multi-rise-p" min="0"
+               placeholder="Total yeast %">
+
+
+<h1> FINISHED DOUGH MULTIPLIER</h1>
+
+xLoaves <input type="number" id="multi-dough-total" min="0"
+              placeholder="Multi loaves?">
+xFlour <input readonly type="number" id="multi-flour-g" min="0"
+             placeholder="multiple loaves">
+xWater <input readonly type="number" id="multi-hydro-g" min="0"
+             placeholder=" Total in grams">
+xSalt <input readonly type="number" id="multi-salt-g" min="0"
+            placeholder="Total in grams">
+xRiser <input readonly type="number" id="multi-rise-g" min="0"
+             placeholder="Total in grams">
+xFlour % <input type="text" readonly value="100%">
+xWater % <input readonly type="number" id="multi-hydro-p" min="0"
+               placeholder="Total water %">
+xSalt % <input readonly type="number" id="multi-salt-p" min="0"
+              placeholder="Total salt %">
+xYeast % <input readonly type="number" id="multi-rise-p" min="0"
+               placeholder="Total yeast %">
+
+
+<script type='text/javascript' src='../static/app.js'></script>
+
+
+{% endblock %}

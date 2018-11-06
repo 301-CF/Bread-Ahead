@@ -2,8 +2,14 @@
     text-align: center;
     display: inline-flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    margin: .2em;
 }
 
+
+.flex-wrapper {
+    flex-wrap: wrap;
+}
 input {
     margin: 3px;
 }

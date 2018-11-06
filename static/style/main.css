@@ -6,6 +6,10 @@ nav {
     text-align: center;
 }
 
+input {
+    text-align: right;
+}
+
 li {
     display: inline-block;
 }
