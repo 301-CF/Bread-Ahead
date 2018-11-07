@@ -7,9 +7,9 @@ function percentToGram(percent, flour) {
 }
 
 const masterBread = 1000;
-  let hydro = 0;
-  let salt  = 0;
-  let rise  = 0;
+let hydro = 0;
+let salt  = 0;
+let rise  = 0;
 
 
 function updateTotal(hydro, salt, rise) {
