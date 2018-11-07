@@ -6,17 +6,8 @@ nav {
     text-align: center;
 }
 
-input {
-    text-align: right;
-}
-
-li {
+nav li {
     display: inline-block;
 }
 
-#remember {
-text-align: center;
-margin: .3em;
-font-size: 4em;
-}
 

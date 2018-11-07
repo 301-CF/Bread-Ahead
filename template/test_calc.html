@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+{% block content %}
+<link rel="stylesheet" href="../static/style/inputs.css">
+
+<div class="flex-container">
+  <div id="master-one">
+    <form class="grams">
+
+      <h1> MASTER FORMULA</h1>
+
+      <div class="row"><label>Flour<input type="number"
+                                          id="flour-g"
+                                          min="0"
+                                          readonly
+                                          value="1000"></label></div>
+      <div class="row"><label>Water<input type="number"
+                                          id="hydro-g"
+                                          min="0"
+                                          onkeyup="updateTotal(hydro, salt, rise)"
+
+      ></label></div>
+      <div class="row"><label> Salt<input type="number"
+                                          id="salt-g"
+                                          min="0"
+                                          onkeyup="updateTotal(hydro, salt, rise)"
+      ></label></div>
+      <div class="row"><label>Rise<input type="number"
+                                         id="rise-g"
+                                         min="0"
+                                         onkeyup="updateTotal(hydro, salt, rise)"
+      ></label></div>
+
+    </form>
+  </div>
+
+<p id="master-total">TOTAL 1000g</p>
+
+
+<div id="master-two">
+  <form class="percent">
+    <div class="row"><label>Flour %<input readonly
+                                          id="flour-p"
+                                          type="text"
+                                          value="100%"></label></div>
+
+    <div class="row"><label>Water %<input type="number"
+                                          id="hydro-p"
+                                          min="0"
+                                          onkeyup="updateTotal(hydro, salt, rise)">
+    </label></div>
+
+    <div class="row"><label>Salt %<input type="number"
+                                         id="salt-p"
+                                         min="0"
+                                         onkeyup="updateTotal(hydro, salt, rise)"
+    ></label></div>
+    <div class="row"><label>Rise %<input type="number"
+                                         id="rise-p"
+                                         min="0"
+                                         onkeyup="updateTotal(hydro, salt, rise)"
+    ></label></div>
+  </form>
+</div>
+</div>
+
+<script type='text/javascript' src='../static/test.js'></script>
+
+
+{% endblock content %}

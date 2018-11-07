@@ -6,12 +6,17 @@ app = Flask(__name__, template_folder='template')
 @app.route('/')
 @app.route('/home')
 def home():
-    return render_template('home.html', title='Bread Calc')
+    return render_template('calc.html', title='Bread Calc')
 
 
 @app.route('/about')
 def about():
     return render_template('about.html', title='About')
+
+
+@app.route('/test')
+def test_calc():
+    return render_template('test_calc.html', title='Test calc')
 
 
 if __name__ == '__main__':

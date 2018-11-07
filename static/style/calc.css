@@ -6,10 +6,6 @@
     margin: .2em;
 }
 
-
-.flex-wrapper {
-    flex-wrap: wrap;
-}
 input {
     margin: 3px;
 }
@@ -31,6 +27,3 @@ div.row{
     display:table-row;
 }
 
-table, tr, td {
-    display: none;
-}
