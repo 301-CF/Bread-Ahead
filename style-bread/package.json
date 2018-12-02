@@ -1,0 +1,20 @@
+{
+  "name": "style-bread",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "J Christie JJBby",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "live-server": "^1.2.0",
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6",
+    "reload": "^2.3.1"
+  }
+}

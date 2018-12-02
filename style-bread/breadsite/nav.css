@@ -1,0 +1,47 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: linear-gradient(to right, #a25b5b, #692e4c);
+    padding: 1.5em 2em;
+    font-weight: bold;
+    width: 100%;
+}
+
+.container h2 {
+    font-size: 1.6em;
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    padding: 12px;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color:rgba(225, 225, 225, .7);
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.form-inputs {
+    display: flex;
+    flex-wrap: wrap;
+}

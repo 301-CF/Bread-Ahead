@@ -1,0 +1,22 @@
+.card {
+    padding: 12px;
+    display: flex;
+    flex-wrap: warp;
+    width: 300px;
+    text-align: center;
+}
+
+.left .right {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between; 
+    
+}
+
+input {
+    width: 90px;
+}
+
+total {
+    padding-top: 20px;
+}

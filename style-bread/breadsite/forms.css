@@ -1,0 +1,59 @@
+section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+    text-align: center;
+}
+
+.master input {
+    margin: 6px 0px 6px 6px;
+}
+
+.master {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+strong {
+    width: 100px;
+    margin-top: 8px;
+    text-align:right;
+}
+
+
+input {
+    direction: rtl;
+    width: 60px;
+    border-radius: 6px;
+}
+
+ul li {
+    margin-left: 30px;
+    list-style-type: disc;
+}
+
+.g-p {
+    margin-top: 10px;
+}
+
+.split {
+    visibility: hidden;
+}
+
+.info-icon {
+    height: 16px;
+    padding-left:4px;
+}
+
+input:read-only {
+    background-color: lightgrey;
+}
+
+.form-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}

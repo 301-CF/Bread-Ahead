@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./nav.css">
+  <link rel="stylesheet" href="./forms.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+
+      <div>
+        <h2>BREAD CALC</h2>
+      </div>
+
+      <nav>
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Calc</a>
+          <a href="#">About</a>
+        </div>
+        <div class="sign-up">
+          <a href="#">Sign Up</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="form-inputs" @input="mTotal">
+
+      <section>
+        <h1> MASTER FORMULA<img class="info-icon" src="info-bubble.svg"></h1>
+        <br>
+        <div class="master">
+
+          <strong>
+            Flour</strong>
+
+              <input v-model.number="masterFlourG"><p class="g-p">g</p>
+              <input v-model.number="masterFlourP"><p class="g-p">%</p>
+
+        </div>
+
+        <div class="master">
+
+          <strong>
+            Hydro</strong>
+
+              <input v-model.number="masterWaterG" @input="gramToPercent(masterWaterG, masterFlourG);"
+               min="0">
+              <p class="g-p">g</p>
+
+              <input min="0" v-model.number="masterWaterP" @keyup="percentToGram(masterWaterP, masterFlourG)">
+              <p class="g-p">%</p>
+
+
+
+        </div>
+
+        <div class="master">
+          <strong>Salt</strong><input min="0" v-model.number="masterSaltG">
+          <p class="g-p">g</p>
+          <input min="0" v-model.number="masterSaltP">
+          <p class="g-p">%</p>
+          <input class="split" type="submit" value="Split" onsubmit="return false">
+        </div>
+
+        <div class="master">
+          <strong>Rise</strong><input min="0" v-model.number="masterRiseG">
+          <p class="g-p">g</p>
+          <input min="0" v-model.number="masterRiseP">
+          <p class="g-p">%</p>
+          <input class="split" type="submit" value="Split" onsubmit="return false">
+        </div>
+        <total>TOTAL {{ mTotal() }}g</total>
+      </section>
+    </div>
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+
+  <script>
+    app = new Vue({
+
+      el: '.form-inputs',
+
+      data: {
+
+        masterFlourG: 1000,
+        masterWaterG: 700,
+        masterSaltG: 20,
+        masterRiseG: 60,
+
+        masterTotal: 1780,
+
+        masterFlourP: 100,
+        masterWaterP: 70,
+        masterSaltP: 2,
+        masterRiseP: 6,
+      },
+
+      methods: {
+
+        gramToPercent: function (grams, flour) {
+          return this.masterWaterP = (grams / flour) * 100;
+        },
+
+        percentToGram: function (percent, flour) {
+          return this.masterWaterG = (percent * flour) / 100;
+        },
+
+        mTotal: function () {
+          return masterTotal = (this.masterFlourG + this.masterWaterG + this.masterSaltG + this.masterRiseG);
+        },
+
+      },
+
+
+
+
+
+    })
+  </script>
+</body>             
