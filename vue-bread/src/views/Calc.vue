@@ -1,26 +1,15 @@
 <template>
   <div class="home">
     <br>
-    <h1>CALCULATOR!</h1>
+    <h1>DRAGON!</h1>
     <br>
     <section>
       <div class="col-master">
         <h1> MASTER FORMULA</h1>
-        <div class="row">
-          <strong>Flour</strong>
-          <label><input id="master-flour-gram">g</label>
-          <label><input id="master-flour-percent" readonly placeholder="100">%</label>
-        </div>
-        <div class="row">
-          <strong>Hydro</strong>
-          <label><input id="master-hydro-gram">g</label>
-          <label><input id="master-hydro-percent">%</label>
-        </div>
-        <div class="row">
-          <strong>Salt</strong>
-          <label><input id="master-salt-gram">g</label>
-          <label><input id="master-salt-percent">%</label>
-        </div>
+        <InputCalc msg="Flour" :holder="flour"/>
+        <InputCalc msg="Hydro" :holder="water"/>
+        <InputCalc msg="Salt" :holder="salt"/>
+        <InputCalc msg="Rise" :holder="rise"/>
       </div>
     </section>
   </div>
@@ -28,6 +17,33 @@
 </template>
 
 <script>
+// @ is an alias to /src
+import InputCalc from '@/components/InputCalc.vue';
+
+export default {
+  name: 'home',
+  components: {
+    InputCalc,
+  },
+
+  data() {
+    return {
+      flour: 1000,
+      water: 600,
+      salt: 18,
+      rise: 45,
+    };
+  },
+
+  method: {
+    gramConvert(percent) {
+      return (percent * this.$data.flour) / 100;
+    },
+    percentConvert(grams) {
+      return (grams / this.$data.flour) * 100;
+    },
+  },
+};
 
 </script>
 
@@ -53,18 +69,3 @@
     border-radius: 6px;
   }
 </style>
-
-
-<!--<script>-->
-// @ is an alias to /src
-import input from '@/components/input.vue';
-// import calc from '@/components/calc.vue';
-// import HelloWorld from '@/components.vue.';
-
-<!--export default {-->
-  <!--name: 'home',-->
-  <!--components: {-->
-    <!--HelloWorld,-->
-  <!--},-->
-<!--};-->
-<!--</script>-->
